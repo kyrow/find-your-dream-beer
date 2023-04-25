@@ -1,0 +1,42 @@
+.container {
+	width: 80%;
+	margin:auto;
+	padding: 50px 0;
+}
+
+.introContainer {
+	width: 100%;
+	display: flex;
+	
+	@media (min-width:325px) {
+		flex-direction: column;
+	}
+	@media (min-width:725px) {
+		flex-direction: row;
+	}
+}
+
+.introImage {
+	width: 40%;
+
+	@media (min-width:325px) {
+		width:100%;
+	}
+	@media (min-width:725px) {
+		width:40%;
+	}
+}
+
+.introDescription {
+	color:#000;
+
+	h2{font-size: 36px;}
+}
+
+.description {
+	padding: 50px 0;
+}
+
+.descriptionText {
+	font-size: 24px;
+}

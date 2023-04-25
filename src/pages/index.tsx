@@ -1,7 +1,14 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
+import styles from '../styles/home.module.scss'
+import Image from 'next/image'
+import { Swiper, SwiperSlide} from 'swiper/react';
+import { Autoplay } from 'swiper';
+import 'swiper/css';
+import { Josefin_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const josefinSans = Josefin_Sans({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -12,7 +19,41 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className={josefinSans.className}>
+				<div className={styles.container}>
+					<div className={styles.introContainer}>
+						<div className={styles.introImage}>
+						<Swiper
+						  loop={true}
+							modules={[Autoplay]}
+							autoplay={{delay:1000}}
+							spaceBetween={50}
+							slidesPerView={1}
+							onSlideChange={() => console.log('slide change')}
+							onSwiper={(swiper) => console.log(swiper)}
+    				>
+      <SwiperSlide><Image src="/corona.png" alt="corona" width={300} height={150}/></SwiperSlide>
+      <SwiperSlide><Image src="/budweiser.png" alt="budweiser"  width={300} height={150}/></SwiperSlide>
+      <SwiperSlide><Image src="/heineken.png" alt="heineken"  width={300} height={150}/></SwiperSlide>
+      <SwiperSlide><Image src="/hoegaarden.png" alt="hoegaarden"  width={300} height={150}/></SwiperSlide>
+    				</Swiper>
+							<Image src="/emojiThinking.png" alt="emojiThinking" width={300} height={300}/>
+						</div>
+						<div className={styles.introDescription}>
+							<h2>Let's find your dream beer</h2>
+							<div className={styles.description}>
+								<span>
+									<p className={styles.descriptionText}>Beer is one of the oldest and most widely consumed type of alcoholic drink in the world, and the third most popular drink overall after potable water and tea. It is produced by the brewing and fermentation of starches, mainly derived from cereal grains—most commonly from malted barley, though wheat, maize (corn), rice, and oats are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer. </p>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<h2>How is it work ?</h2>
+					</div>
+
+				</div>
       </main>
     </>
   )
