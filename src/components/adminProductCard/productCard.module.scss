@@ -1,0 +1,16 @@
+.productContainer {
+	width: 100%;
+	background-color: bisque;
+	display: flex;
+	justify-content: space-between;
+}
+
+.description {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+}
+
+.image {
+	width: 30%;
+}

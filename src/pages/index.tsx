@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import styles from '../styles/home.module.scss'
 import Image from 'next/image'
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Autoplay } from 'swiper';
 import 'swiper/css';
 import { Josefin_Sans } from 'next/font/google';
+import Layout from '../components/layout/layout'
 
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 
@@ -19,6 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+			<Layout>
       <main className={josefinSans.className}>
 				<div className={styles.container}>
 					<div className={styles.introContainer}>
@@ -55,6 +56,7 @@ export default function Home() {
 
 				</div>
       </main>
+			</Layout>
     </>
   )
 }
