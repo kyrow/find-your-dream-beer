@@ -1,10 +1,12 @@
 .container {
 	width: 80%;
+	height: 100vh;
 	margin:auto;
 	padding: 50px 0;
 }
 
 .introContainer {
+	
 	width: 100%;
 	display: flex;
 	
@@ -28,6 +30,7 @@
 }
 
 .introDescription {
+	
 	color:#000;
 
 	h2{font-size: 36px;}
@@ -40,3 +43,33 @@
 .descriptionText {
 	font-size: 24px;
 }
+
+.workDescription {
+	padding: 50px 0;
+}
+
+.workExamples {
+	height: 250px;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+
+	div {
+		width: 45%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 21px;
+
+		span {
+			
+			width: 80%;
+		}
+	}
+}
+
+.icon {
+width:50px;
+height:50px;
+}
+

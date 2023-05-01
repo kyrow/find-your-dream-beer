@@ -6,6 +6,10 @@ import { Autoplay } from 'swiper';
 import 'swiper/css';
 import { Josefin_Sans } from 'next/font/google';
 import Layout from '../components/layout/layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilter,faCommentDots,faGreaterThanEqual,faMagnifyingGlass,faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import PageDown from '@/components/pageDownButton/pageDownButton';
+import VersusPage from '@/components/versusPage/versusPage';
 
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 
@@ -43,18 +47,51 @@ export default function Home() {
 						<div className={styles.introDescription}>
 							<h2>Let's find your dream beer</h2>
 							<div className={styles.description}>
-								<span>
-									<p className={styles.descriptionText}>Beer is one of the oldest and most widely consumed type of alcoholic drink in the world, and the third most popular drink overall after potable water and tea. It is produced by the brewing and fermentation of starches, mainly derived from cereal grains—most commonly from malted barley, though wheat, maize (corn), rice, and oats are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer. </p>
-								</span>
+								<span><p className={styles.descriptionText}>Tired of the usual beer? So let us help you find the beer of your dreams.</p></span>
+							<div className={styles.workDescription}>
+								<h2>That's how we can help</h2>
+
+								<div className={styles.workExamples}>
+									<div>
+									<div className={styles.icon}>
+									<FontAwesomeIcon icon={faFilter} />
+									</div>
+									<span>filter a beer you like</span>
+									</div>
+
+									<div>
+									<div className={styles.icon}>
+										<FontAwesomeIcon icon={faGreaterThanEqual} />
+									</div>
+									<span>Compare your favorite drinks</span>
+									</div>
+
+									<div>
+									<div className={styles.icon}>
+									<FontAwesomeIcon icon={faMagnifyingGlass} />
+									</div>
+									<span>Expand your taste preferences</span>
+									</div>
+
+									<div>
+									<div className={styles.icon}>
+									<FontAwesomeIcon icon={faCommentDots} />
+									</div>
+									<span>Leave and read reviews on the beer </span>
+									</div>
+
+								</div>
 							</div>
+							</div>
+	
 						</div>
 					</div>
 
-					<div>
-						<h2>How is it work ?</h2>
-					</div>
+<PageDown/>
+
 
 				</div>
+				<VersusPage/>
       </main>
 			</Layout>
     </>
