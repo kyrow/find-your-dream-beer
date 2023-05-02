@@ -3,8 +3,8 @@ import styles from './versusPage.module.scss'
 
 function VersusPage() {
 	return (
-		<div id="versusPage" className={styles.container}>
-			
+		<div name="versusPage" className={styles.container}>
+
 		</div>
 	)
 }

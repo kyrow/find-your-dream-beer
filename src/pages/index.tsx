@@ -86,10 +86,7 @@ export default function Home() {
 	
 						</div>
 					</div>
-
 <PageDown/>
-
-
 				</div>
 				<VersusPage/>
       </main>

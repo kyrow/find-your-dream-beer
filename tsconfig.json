@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/modalAdminProductCard/adminProductModal.jsx", "src/pages/admin/product/index.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/modalAdminProductCard/adminProductModal.jsx", "src/pages/admin/product/index.jsx", "src/components/pageDownButton/pageDownButton.jsx"],
   "exclude": ["node_modules"]
 }
