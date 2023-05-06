@@ -33,11 +33,15 @@
 .introDescription {
 	
 	color:#000;
+	margin-bottom: 30px;
 
-	h2{font-size: 36px;}
+
+	h2{font-size: 36px;
+	color: #7C9070;}
 }
 
 .description {
+	
 	padding: 50px 0;
 }
 
@@ -46,7 +50,9 @@
 }
 
 .workDescription {
-	padding: 50px 0;
+	padding: 50px ;
+	background-color: #fff;
+	border-radius: 20px;
 }
 
 .workExamples {
@@ -55,6 +61,7 @@
 	justify-content: space-between;
 	display: flex;
 	flex-wrap: wrap;
+	
 
 	div {
 		width: 45%;

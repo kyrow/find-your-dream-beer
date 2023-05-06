@@ -23,6 +23,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
 			<Layout>
       <main className={josefinSans.className}>
 				<div className={styles.container}>
@@ -44,10 +45,14 @@ export default function Home() {
     				</Swiper>
 							<Image src="/emojiThinking.png" alt="emojiThinking" width={300} height={300}/>
 						</div>
+						
 						<div className={styles.introDescription}>
+							<div>
 							<h2>Let's find your dream beer</h2>
 							<div className={styles.description}>
 								<span><p className={styles.descriptionText}>Tired of the usual beer? So let us help you find the beer of your dreams.</p></span>
+							</div>
+
 							<div className={styles.workDescription}>
 								<h2>That's how we can help</h2>
 
@@ -86,7 +91,7 @@ export default function Home() {
 	
 						</div>
 					</div>
-<PageDown/>
+				<PageDown/>
 				</div>
 				<VersusPage/>
       </main>
