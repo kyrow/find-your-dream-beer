@@ -18,13 +18,14 @@ function VersusPage() {
 
 				{openFinder && <ComparableItem />}
 				{closeButton && <div className={styles.buttonContainer}>
+
 					<span>Click to pick a beer that u want</span>
 					<button className={styles.button}
 						onClick={() => {
 							setOpenFinder(true)
 							setCloseButton(false)
 						}}>
-						<FontAwesomeIcon icon={faPlus} />
+						<FontAwesomeIcon className={styles.icon} icon={faPlus} />
 					</button>
 				</div>}
 
@@ -32,13 +33,14 @@ function VersusPage() {
 
 				{openFinder && <ComparableItem />}
 				{closeButton && <div className={styles.buttonContainer}>
+
 					<span>Click to pick a beer that u want</span>
 					<button className={styles.button}
 						onClick={() => {
 							setOpenFinder(true)
 							setCloseButton(false)
 						}}>
-						<FontAwesomeIcon icon={faPlus} />
+						<FontAwesomeIcon className={styles.icon} icon={faPlus} />
 					</button>
 				</div>}
 

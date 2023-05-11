@@ -13,7 +13,6 @@ function Header() {
 	
 	const closeModal = () => {
 		setModalOpen(false);
-		console.log('close modal')
 	}
 
 	return (

@@ -5,11 +5,6 @@ import LoginContent from '../loginContent/loginContent';
 
 function LoginModal({modalOff}) {
 
-	const closeModal = () => {
-		modalOff()
-	}
-
-
 	return (
 		<div className={styles.wrapper}>
 			<LoginContent modalOff={modalOff}/>

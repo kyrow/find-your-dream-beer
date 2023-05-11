@@ -7,8 +7,9 @@
 .icon {
 	height: 60px;
 	width: 60px;
+	transition: transform 0.3s ease 0s;
 
 	&:hover{
-	width: 65px;
+	transform:translateY(10px) ;
 	}
 }
