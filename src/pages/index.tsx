@@ -11,10 +11,12 @@ import { faFilter,faCommentDots,faGreaterThanEqual,faMagnifyingGlass,faChevronDo
 import PageDown from '@/components/pageDownButton/pageDownButton';
 import VersusPage from '@/components/versusPage/versusPage';
 
+
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -35,8 +37,6 @@ export default function Home() {
 							autoplay={{delay:1000}}
 							spaceBetween={50}
 							slidesPerView={1}
-							onSlideChange={() => console.log('slide change')}
-							onSwiper={(swiper) => console.log(swiper)}
     				>
       <SwiperSlide><Image src="/corona.png" alt="corona" width={300} height={150}/></SwiperSlide>
       <SwiperSlide><Image src="/budweiser.png" alt="budweiser"  width={300} height={150}/></SwiperSlide>

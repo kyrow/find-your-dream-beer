@@ -1,0 +1,44 @@
+.loginContent {
+	position: relative;
+	padding: 20px;
+	width: 50vh;
+	min-height:300px;
+	background-color: #7C9070;
+	border-radius: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	button {
+		height: 25px;
+		background-color: #F97B22;
+	}
+}
+
+.close {
+	position: absolute;
+	right: 15px;
+	top:5px;
+
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.title {
+	color:#000;
+	text-align: center;
+}
+
+.inputContainer{
+	display: flex;
+	flex-direction: column;
+	color:#000
+}
+
+.input {
+	height: 25px;
+	background-color: #fff;
+	color:#000;
+	padding-left: 10px;
+}
