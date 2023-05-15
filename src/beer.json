@@ -1,0 +1,38 @@
+{
+  "beer": [
+    {
+      "title": "Blanc",
+      "percent": 4.9,
+      "Country": "France"
+    },
+		{
+			"title": "Budweiser",
+      "percent": 5,
+      "Country": "USA"
+    },
+		{
+			"title": "Corona",
+      "percent": 4.5,
+      "Country": "USA"
+    },
+		{
+			"title": "Heineken",
+      "percent": 5,
+      "Country": "USA"
+    },		{
+			"title": "Coors",
+      "percent": 4.2,
+      "Country": "USA"
+    },
+		{
+			"title": "Tsingtao",
+      "percent": 4.5,
+      "Country": "China"
+    },
+		{
+			"title": "Guiness",
+      "percent": 4.2,
+      "Country": "Ireland"
+		}
+	]
+}

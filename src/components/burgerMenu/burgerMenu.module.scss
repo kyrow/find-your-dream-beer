@@ -1,0 +1,20 @@
+.burgerBar {
+	background-color: #7C9070;
+	width:300px;
+	height: 200%;
+	position: absolute;
+	transform: translate(-100%);
+	transition: all 1s;
+	top:75px;
+	z-index: 2;
+}
+
+.clicked {
+	transition: all 1s;
+	transform: translateX(0);
+}
+
+.unclicked {
+	transition: all 1s;
+	transform: translateX(-100%);
+}

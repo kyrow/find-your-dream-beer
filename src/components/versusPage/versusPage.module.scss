@@ -18,7 +18,17 @@
 	padding:  50px;
 
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.title{
+	color:#7C9070;
+	font-size: 36px;
+}
+
+.subtitle {
+	color:#000;
+	font-size: 23px;
 }
 
 .button {
@@ -30,9 +40,9 @@
 	background-color: #7C9070;
 	
 
-	transition: transform 0.3s ease 0s;
+	transition: transform 1s ease 0s;
 	&:hover{
-		transform: rotate(45deg);
+		transform: rotate(360deg);
 	}
 }
 
@@ -43,7 +53,7 @@
 .buttonContainer{
 	padding: 20px;
 	height: 30%;
-	width: 30%;
+	width: 50%;
 
 
 	display: flex;
