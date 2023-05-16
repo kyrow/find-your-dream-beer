@@ -6,6 +6,8 @@ import styles from './product.module.scss'
 import LayoutAdmin from '@/components/layout/layoutAdmin'
 import ProductCard from '@/components/adminProductCard/productCard'
 import AdminProductCardModal from '@/components/modalAdminProductCard/adminProductModal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 function AdminProduct() {
 
@@ -17,12 +19,15 @@ function AdminProduct() {
 
 	return (
 		<LayoutAdmin>
-			<div className={styles.product}>Products will be here</div>
-			{/* <ProductCard/> */}
+			{/* <ProductCard /> */}
 
 			{modalOpen && <AdminProductCardModal closeModal={closeModal} />}
 
-			<button onClick={() => { setModalOpen(true) }}>Add a beer</button>
+			<button className={styles.button} onClick={() => { setModalOpen(true) }}>
+				<span>Добавить</span>
+				<FontAwesomeIcon className={styles.icon} icon={faPlus} />
+			</button>
+
 		</LayoutAdmin>
 
 	)

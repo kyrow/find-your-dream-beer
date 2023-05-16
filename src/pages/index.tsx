@@ -1,19 +1,25 @@
 import Head from 'next/head'
 import styles from '../styles/home.module.scss'
-import Image from 'next/image'
-import { Swiper, SwiperSlide} from 'swiper/react';
-import { Autoplay } from 'swiper';
+
 import 'swiper/css';
-import { Josefin_Sans } from 'next/font/google';
+import { Josefin_Sans,Bebas_Neue,Kalam } from 'next/font/google';
 import Layout from '../components/layout/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilter,faCommentDots,faGreaterThanEqual,faMagnifyingGlass,faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import PageDown from '@/components/pageDownButton/pageDownButton';
 import VersusPage from '@/components/versusPage/versusPage';
+import Polaroid from '@/components/polaroid/polaroid';
 
 
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+})
+const kalam = Kalam({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function Home() {
 
@@ -27,23 +33,21 @@ export default function Home() {
       </Head>
 
 			<Layout>
+				
       <main className={josefinSans.className}>
+				<div className={styles.background}>
+
+				<div className={bebasNeue.className}>
+					<span className={styles.neonTitle}>beerlocator</span>	
+				</div>
+
 				<div className={styles.container}>
+
 					<div className={styles.introContainer}>
+
 						<div className={styles.introImage}>
-						<Swiper
-						  loop={true}
-							modules={[Autoplay]}
-							autoplay={{delay:1000}}
-							spaceBetween={50}
-							slidesPerView={1}
-    				>
-      <SwiperSlide><Image src="/corona.png" alt="corona" width={300} height={150}/></SwiperSlide>
-      <SwiperSlide><Image src="/budweiser.png" alt="budweiser"  width={300} height={150}/></SwiperSlide>
-      <SwiperSlide><Image src="/heineken.png" alt="heineken"  width={300} height={150}/></SwiperSlide>
-      <SwiperSlide><Image src="/hoegaarden.png" alt="hoegaarden"  width={300} height={150}/></SwiperSlide>
-    				</Swiper>
-							<Image src="/emojiThinking.png" alt="emojiThinking" width={300} height={300}/>
+							<Polaroid/>
+							<span className={kalam.className}>#IWannaBeer</span>
 						</div>
 						
 						<div className={styles.introDescription}>
@@ -91,9 +95,10 @@ export default function Home() {
 	
 						</div>
 					</div>
-				<PageDown/>
+				{/* <PageDown/> */}
 				</div>
 				<VersusPage/>
+				</div>
       </main>
 			</Layout>
     </>

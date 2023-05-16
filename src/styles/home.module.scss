@@ -1,3 +1,9 @@
+.background {
+	background-image: url('https://img.freepik.com/free-photo/red-textured-brick-wall-background_53876-63584.jpg?w=2000');
+	background-size: cover;
+	height: 100vh;
+}
+
 .container {
 	width: 80%;
 	height: 100vh;
@@ -6,10 +12,27 @@
 	
 }
 
+.neonTitle {
+	padding-top: 20px;
+	font-size: 150px;
+	display: flex;
+	justify-content: center;
+	text-shadow:
+	0 0 7px #fff,
+	0 0 10px #fff,
+	0 0 21px #fff,
+	0 0 42px #0fa,
+	0 0 82px #0fa,
+	0 0 92px #0fa,
+	0 0 102px #0fa,
+	0 0 151px #0fa;
+}
+
 .introContainer {
 	
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 	
 	@media (min-width:325px) {
 		flex-direction: column;
@@ -20,26 +43,43 @@
 }
 
 .introImage {
-	width: 40%;
 
-	@media (min-width:325px) {
-		width:100%;
-	}
-	@media (min-width:725px) {
-		width:40%;
-	}
+		width: 35%;
+    background-color: lightgrey;
+    height: 500px;
+    padding: 0 20px;
+		color:#000;
+		font-size: 35px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	
 }
+
+
 
 .introDescription {
 	
+	width: 60%;
+
 	color:#000;
+	
 	margin-bottom: 30px;
 	background-color: #fff;
-	border-radius: 20px;
+	border-style: solid;
+  border-width: 15px;
+  border-top-color: lighten(#000, 20%);
+  border-right-color: lighten(#000, 0%);
+  border-bottom-color: lighten(#000, 20%);
+  border-left-color: lighten(#000, 0%);
+  box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+
 	padding: 50px ;
 
 	h2{font-size: 36px;
 	color: #7C9070;}
+
 }
 
 .description {

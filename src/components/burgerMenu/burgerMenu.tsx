@@ -9,7 +9,16 @@ const unclicked = styles.burgerBar+ ' ' + styles.unclicked
 
 	return ( 
 			<div className={active ? clicked : unclicked }>
-				test
+				<div className={styles.burgerContent}>
+					<div>
+						<ul>
+							<li>test</li>
+							<li>test</li>
+							<li>test</li>
+							<li>test</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 	 );
 }
