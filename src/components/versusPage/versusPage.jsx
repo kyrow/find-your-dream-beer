@@ -11,31 +11,33 @@ function VersusPage() {
 	const [closeButton, setCloseButton] = useState(true)
 
 	return (
-		<div name="versusPage" className={styles.container}>
-			<h2 className={styles.title}>Compare a beer</h2>
-			<p className={styles.subtitle}>Here you can compare any two beers and look at their characteristics in more detail</p>
+		<div className={styles.wrapper}>
+			<div name="versusPage" className={styles.container}>
+				<h2 className={styles.title}>Compare a beer</h2>
+				<p className={styles.subtitle}>Here you can compare any two beers and look at their characteristics in more detail</p>
 
-			<div className={styles.compareSection}>
+				<div className={styles.compareSection}>
 
 
 
-				{openFinder && <ComparableItem />}
-				{closeButton && <div className={styles.buttonContainer}>
+					{openFinder && <ComparableItem />}
+					{closeButton && <div className={styles.buttonContainer}>
 
-					<span>Click to pick a beer that u want</span>
-					<button className={styles.button}
-						onClick={() => {
-							setOpenFinder(true)
-							setCloseButton(false)
-						}}>
-						<FontAwesomeIcon className={styles.icon} icon={faPlus} />
-					</button>
-				</div>}
+						<span>Click to pick a beer that u want</span>
+						<button className={styles.button}
+							onClick={() => {
+								setOpenFinder(true)
+								setCloseButton(false)
+							}}>
+							<FontAwesomeIcon className={styles.icon} icon={faPlus} />
+						</button>
+					</div>}
 
-				{closeButton == false ? <span>vs</span> : null}
+					{closeButton == false ? <span>vs</span> : null}
 
-				{openFinder && <ComparableItem />}
+					{openFinder && <ComparableItem />}
 
+				</div>
 			</div>
 		</div>
 	)

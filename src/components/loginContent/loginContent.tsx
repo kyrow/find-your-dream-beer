@@ -23,7 +23,8 @@ function LoginContent({modalOff}) {
 
 			<button>Log in</button>
 
-			<button>Don't have an account? Sign up</button>
+			<button className={styles.secButton}>Don't have an account? Sign up</button>
+
 		</div>
 	)
 }
