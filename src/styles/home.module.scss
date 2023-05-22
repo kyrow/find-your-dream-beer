@@ -1,6 +1,6 @@
-.background {
-	height: 100vh;
-}
+// .background {
+// 	height: 100vh;
+// }
 
 .container {
 	width: 80%;
@@ -23,6 +23,18 @@
 	0 0 92px #0fa,
 	0 0 102px #0fa,
 	0 0 151px #0fa;
+
+	@media (min-width:320px) {
+		font-size: 70px;
+	}
+
+	@media (min-width:720px) {
+		font-size: 120px;
+	}
+
+	@media (min-width:1020px) {
+		font-size: 150px;
+	}
 }
 
 .introContainer {
@@ -52,6 +64,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+
+
+	@media (max-width:720px) {
+		display: none;
+	}
 	
 }
 
@@ -78,15 +95,34 @@
 	h2{font-size: 36px;
 	color: #7C9070;}
 
+
+	@media (max-width:720px) {
+	width: 100%;
+	padding: 20px;
+
+	h2 {
+		font-size: 24px;
+	}
+	}
+
 }
 
 .description {
-	
 	padding: 50px 0;
+
+	@media (max-width:720px) {
+		padding: 20px 0;
+	}
 }
 
 .descriptionText {
-	font-size: 24px;
+	
+	@media (min-width:320px) {
+		font-size: 16px;
+	}
+	@media (min-width:720px) {
+		font-size: 24px;
+	}
 }
 
 
@@ -104,8 +140,15 @@
 		justify-content: space-between;
 		font-size: 21px;
 
+		@media (min-width:320px) {
+			font-size: 14px;
+		}
+
+		@media (min-width:720px) {
+			font-size: 18px;
+		}
+
 		span {
-			
 			width: 80%;
 		}
 	}
@@ -114,6 +157,16 @@
 .icon {
 width:50px;
 height:50px;
+
+@media (min-width:320px) {
+	width:25px;
+	height:25px;
+}
+
+@media (min-width:500px) {
+	width:35px;
+	height:35px;
+}
 }
 
 .versusPage {

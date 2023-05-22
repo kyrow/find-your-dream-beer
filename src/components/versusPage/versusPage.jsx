@@ -18,10 +18,9 @@ function VersusPage() {
 
 				<div className={styles.compareSection}>
 
-
-
 					{openFinder && <ComparableItem />}
 					{closeButton && <div className={styles.buttonContainer}>
+
 
 						<span>Click to pick a beer that u want</span>
 						<button className={styles.button}
@@ -31,9 +30,10 @@ function VersusPage() {
 							}}>
 							<FontAwesomeIcon className={styles.icon} icon={faPlus} />
 						</button>
+
 					</div>}
 
-					{closeButton == false ? <span>vs</span> : null}
+					{closeButton == false ? <span className={styles.vs}>vs</span> : null}
 
 					{openFinder && <ComparableItem />}
 

@@ -39,7 +39,7 @@ function Header() {
 							<li>
 								<div className={styles.input}>
 								{openInput &&	<input type="text" />}
-								<FontAwesomeIcon icon={faMagnifyingGlass} className={styles.icon} onClick={()=>{setInputOpen(true)}} />
+								<FontAwesomeIcon icon={faMagnifyingGlass} className={styles.icon} onClick={()=>{setInputOpen(!openInput)}} />
 								</div>
 							</li>
 							<li className={styles.iconLi} onClick={() => { setModalOpen(true) }}>

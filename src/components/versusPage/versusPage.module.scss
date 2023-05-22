@@ -1,7 +1,5 @@
 .wrapper {
-	height:100%;
-
-	
+	height:100vh;
 }
 .container {
 	height:100%;
@@ -21,6 +19,10 @@
   border-bottom-color: lighten(#000, 20%);
   border-left-color: lighten(#000, 0%);
   box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+
+	@media (max-width:500px) {
+		padding:0 20px;
+	}
 }
 
 .compareSection{
@@ -33,16 +35,44 @@
 
 	display: flex;
 	justify-content: space-around;
+
+	@media (min-width:320px) {
+		padding:  5px;
+		flex-direction: column;
+	}
+
+	@media (min-width:720px) {
+		padding:  5px;
+		flex-direction: row;
+	}
 }
 
 .title{
 	color:#7C9070;
-	font-size: 36px;
+
+	@media (min-width:320px) {
+		font-size: 22px;
+	}
+
+	@media (min-width:720px) {
+		font-size: 30px;
+	}
+
+	@media (min-width:1020px) {
+		font-size: 36px;
+	}
 }
 
 .subtitle {
 	color:#000;
-	font-size: 23px;
+	@media (min-width:320px) {
+		font-size: 16px;
+	}
+
+	@media (min-width:720px) {
+		font-size: 20px;
+	}
+
 }
 
 .button {
@@ -67,11 +97,16 @@
 .buttonContainer{
 	padding: 20px;
 	height: 30%;
-	width: 50%;
-
+	width: 100%;
 
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
+	align-items: center;
+}
+
+.vs {
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }

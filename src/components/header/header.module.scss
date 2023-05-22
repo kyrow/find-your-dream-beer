@@ -8,6 +8,10 @@
 
 .icon {
 	width: 25px;
+
+	&:hover {
+		color:#7C9070;
+	}
 }
 
 .iconLi {
@@ -69,9 +73,25 @@
 		padding-left: 10px;
 		color: #000;
 
-		animation-name: inputLine;
-		animation-duration: 1s;
+		@media (min-width:325px) {
+		width: 150px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+
+		animation-name: inputLineMobile;
+		animation-duration: 0.5s;
+		}
+
+		@media (min-width:720px) {
+			width: 200px;
+
+			animation-name: inputLine;
+			animation-duration: 1s;
+			}
 	}
+
+
 }
 
 @keyframes inputLine {
@@ -82,6 +102,14 @@ width: 0px;
 100%{
 width: 200px;
 }
+}
 
-
+@keyframes inputLineMobile {
+	0%{
+		width: 0px;
+		}
+		
+		100%{
+		width: 150px;
+		}
 }
