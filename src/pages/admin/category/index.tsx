@@ -6,7 +6,7 @@ import LayoutAdmin from '@/components/layout/layoutAdmin'
 function AdminCategory() {
 	return (
 		<LayoutAdmin>
-			<div className={styles.category}>test</div>
+			<div className={styles.category}>est</div>
 		</LayoutAdmin>
 
 	)

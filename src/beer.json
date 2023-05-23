@@ -1,5 +1,4 @@
-{
-  "beer": [
+ [
     {
       "title": "Blanc",
       "percent": 4.9,
@@ -35,4 +34,3 @@
       "Country": "Ireland"
 		}
 	]
-}

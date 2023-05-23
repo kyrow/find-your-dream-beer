@@ -6,7 +6,6 @@ import { Josefin_Sans,Bebas_Neue,Kalam } from 'next/font/google';
 import Layout from '../components/layout/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilter,faCommentDots,faGreaterThanEqual,faMagnifyingGlass,faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import PageDown from '@/components/pageDownButton/pageDownButton';
 import VersusPage from '@/components/versusPage/versusPage';
 import Polaroid from '@/components/polaroid/polaroid';
 

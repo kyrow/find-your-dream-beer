@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import styles from './burgerMenu.module.scss'
+import Link from 'next/link'
 
 
 function BurgerMenu({active,setActive}) {
@@ -13,13 +14,13 @@ const activeMenu = styles.wrapper
 			<div className={active ? clicked : unclicked } onClick={e => e.stopPropagation()}>
 				<div className={styles.burgerContent} >
 				
-						<span>Beerlocator</span>
+						<span> <Link href="/">Beerlocator</Link> </span>
 						
 						<ul>
-							<li>Крафтовое</li>
-							<li>Светлое</li>
-							<li>Темное</li>
-							<li>Безалкогольное</li>
+						<Link href="/category/craft">	<li>Крафтовое</li></Link>
+						<Link href="/category/light"><li>Светлое</li></Link>
+						<Link href="/category/dark"><li>Темное</li></Link>
+						<Link href="/category/nonAlcohol"><li>Безалкогольное</li></Link>
 						</ul>
 				
 				</div>

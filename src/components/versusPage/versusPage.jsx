@@ -3,7 +3,6 @@ import styles from './versusPage.module.scss'
 import ComparableItem from '../ComparableItem/ComparableItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import beer from '../../beer.json'
 
 function VersusPage() {
 
@@ -30,7 +29,6 @@ function VersusPage() {
 							}}>
 							<FontAwesomeIcon className={styles.icon} icon={faPlus} />
 						</button>
-
 					</div>}
 
 					{closeButton == false ? <span className={styles.vs}>vs</span> : null}

@@ -1,0 +1,48 @@
+.container {
+	width: 80%;
+	margin:auto;
+	background-color: #fff;
+	color: black;
+}
+
+.subHeader {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 75px;
+	width: 100%;
+
+	nav {
+		width: 60%;
+		}
+	}
+
+
+.title {
+	font-size: 40px;
+	width: 30%;
+}
+
+.dropdownArea {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	width: 100%;
+}
+
+.mainDropdown {
+	position: relative;
+	width: 150px;
+	border:2px solid #000;
+	cursor: pointer;
+
+
+}
+
+.productContainer {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+padding: 20px;
+}
